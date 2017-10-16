@@ -1,0 +1,83 @@
+body {
+  background-image: url(imgs/bg.png);
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+}
+.container {
+  display: flex;
+    font-family: 'Modak', cursive;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+.container h1 {
+  font-weight: normal;
+  color: #FA3434;
+  font-size: 40px;
+}
+.bottom-btn {
+  display: flex;
+  align-items: bottom;
+  justify-content: center;
+}
+#stone2,
+#scissors2,
+#paper2 {
+  display: none;
+}
+#start-btn {
+  border: 1px solid #000;
+  text-decoration: none;
+  font-size: 20px;
+  background: #FA3434;
+  padding: 5px 25px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.bottom-btn a:hover {
+  opacity: 0.9;
+}
+#img-container,
+#description {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+#description p {
+  font-weight: bold;
+}
+
+#popup-win,
+#popup-lose,
+#popup-draw {
+  text-align: center;
+  display: none;
+}
+#popup-win p,
+#popup-lose p,
+#popup-draw {
+  font-weight: bold;
+}
+#popup-bg{
+  position:fixed;
+  top: 0;
+  background: black;
+  width:100%;
+  height:100%;
+  opacity: .5;
+}
+
+#popup-fg{
+  border: 2px solid #000;
+  max-width: 20em;
+  background: #ddd;
+  margin: 0 auto;
+  padding: 2em;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25%;
+  border-radius: 1em;
+}
